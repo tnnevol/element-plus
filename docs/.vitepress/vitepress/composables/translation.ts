@@ -25,7 +25,7 @@ export const useTranslation = () => {
     const currentLang = lang.value
 
     // When there is no zh-CN in the list, meaning this is the PR preview
-    // so we simply return the current list which contains only en-US
+    // so we simply return the current list which contains only zh-CN
     if (!langs.includes('zh-CN')) return []
     const langsCopy = langs.slice(0)
     langsCopy.splice(langsCopy.indexOf(currentLang), 1)
@@ -38,7 +38,7 @@ export const useTranslation = () => {
     return currentLang === 'zh-CN' ? langsCopy : ['zh-CN'].concat(langsCopy)
   })
 
-  const language = useStorage(PREFERRED_LANG_KEY, 'en-US')
+  const language = useStorage(PREFERRED_LANG_KEY, 'zh-CN')
 
   const switchLang = (targetLang: string) => {
     if (lang.value === targetLang) return
