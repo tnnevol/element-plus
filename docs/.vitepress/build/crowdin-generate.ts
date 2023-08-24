@@ -21,7 +21,7 @@ async function main() {
     withFileTypes: true,
   })
   const languages = dirs.map((dir) => dir.name)
-  const langWithoutEn = languages.filter((l) => l !== 'en-US')
+  const langWithoutEn = languages.filter((l) => l !== 'zh-CN')
 
   await fs.promises.mkdir(localeOutput)
 
@@ -32,10 +32,10 @@ async function main() {
     'utf-8'
   )
 
-  // loop through en-US
+  // loop through zh-CN
 
-  const enUS = path.resolve(componentLocaleRoot, 'en-US')
-  // we do not include en-US since we are currently using it as template
+  const zhCN = path.resolve(componentLocaleRoot, 'zh-CN')
+  // we do not include zh-CN since we are currently using it as template
   const languagePaths = langWithoutEn.map((l) => {
     return {
       name: l,
@@ -44,7 +44,7 @@ async function main() {
   })
 
   consola.debug(languagePaths)
-  await traverseDir(enUS, languagePaths, localeOutput)
+  await traverseDir(zhCN, languagePaths, localeOutput)
 }
 
 async function traverseDir(
@@ -76,7 +76,7 @@ async function traverseDir(
         const content = require(path.resolve(dir, c.name))
 
         const contentToWrite = {
-          'en-US': content,
+          'zh-CN': content,
         }
 
         await Promise.all(

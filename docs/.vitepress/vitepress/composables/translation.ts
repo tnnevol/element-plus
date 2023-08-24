@@ -38,7 +38,7 @@ export const useTranslation = () => {
     return currentLang === 'zh-CN' ? langsCopy : ['zh-CN'].concat(langsCopy)
   })
 
-  const language = useStorage(PREFERRED_LANG_KEY, 'en-US')
+  const language = useStorage(PREFERRED_LANG_KEY, 'zh-CN')
 
   const switchLang = (targetLang: string) => {
     if (lang.value === targetLang) return
