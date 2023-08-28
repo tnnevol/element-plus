@@ -113,8 +113,8 @@ $border-color: map.merge(
     'light': #00f6ff,
     'lighter': #ebeef5,
     'extra-light': #f2f6fc,
-    'dark': #d4d7de,
-    'darker': #cdd0d6,
+    'dark': #1a6288,
+    'darker': #1a6288,
   ),
   $border-color
 );
@@ -139,7 +139,7 @@ $bg-color: map.merge(
   (
     '': #000a1a,
     'page': #031d2a,
-    'overlay': #ffffff,
+    'overlay': #061e34,
   ),
   $bg-color
 );
@@ -147,7 +147,7 @@ $bg-color: map.merge(
 // Border
 $border-width: 1px !default;
 $border-style: solid !default;
-$border-color-hover: getCssVar('text-color', 'disabled') !default;
+$border-color-hover: getCssVar('text-color', 'primary') !default;
 
 $border-radius: () !default;
 $border-radius: map.merge(
@@ -820,12 +820,13 @@ $pagination: map.merge(
     'bg-color': getCssVar('fill-color', 'blank'),
     'text-color': getCssVar('text-color-primary'),
     'border-radius': 2px,
-    'button-color': getCssVar('text-color-primary'),
+    'button-color': getCssVar('text-color-regular'),
     'button-width': 32px,
     'button-height': 32px,
-    'button-disabled-color': getCssVar('text-color-placeholder'),
-    'button-disabled-bg-color': getCssVar('fill-color', 'blank'),
-    'button-bg-color': getCssVar('fill-color'),
+    'button-disabled-color': getCssVar('disabled-text-color'),
+    'button-disabled-bg-color': 'transparent',
+    'button-border': 1px solid getCssVar('border-color', 'dark'),
+    'button-bg-color': 'transparent',
     'hover-color': getCssVar('color-primary'),
     'font-size-small': 12px,
     'button-width-small': 24px,

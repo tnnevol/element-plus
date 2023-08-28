@@ -166,16 +166,17 @@
     .#{$namespace}-pager li {
       margin: 0 4px;
       background-color: getCssVar('pagination-button-bg-color');
-
+      border: getCssVar('pagination-button-border');
       &.is-active {
-        background-color: getCssVar('color-primary');
-        color: getCssVar('color-white');
+        background-color: getCssVar('bg-color-overlay');
+        color: getCssVar('color-primary');
+        border-color: getCssVar('color-primary');
       }
 
       &:disabled,
       &.is-disabled {
-        color: getCssVar('text-color', 'placeholder');
-        background-color: getCssVar('disabled-bg-color');
+        color: getCssVar('pagination-button-disabled-color');
+        background-color: getCssVar('pagination-button-disabled-bg-color');
 
         &.is-active {
           color: getCssVar('text-color', 'secondary');
