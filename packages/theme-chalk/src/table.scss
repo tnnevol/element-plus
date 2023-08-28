@@ -122,7 +122,7 @@
 
     &.is-group {
       th.#{$namespace}-table__cell {
-        background: getCssVar('fill-color', 'light');
+        background: getCssVar('table-header-bg-color');
       }
     }
   }
