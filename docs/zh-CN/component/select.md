@@ -177,16 +177,6 @@ select/empty-values
 
 :::
 
-## 自定义标签 ^(2.7.4)
-
-您可以自定义标签
-
-:::demo
-
-select/custom-label
-
-:::
-
 ## Select API
 
 ### Select Attributes
@@ -233,8 +223,8 @@ select/custom-label
 | max-collapse-tags ^(2.3.0)      | 需要显示的 Tag 的最大数量 只有当 `collapse-tags` 设置为 true 时才会生效。                                                        | ^[number]                                                                                                                                                                              | 1                                              |
 | popper-options                  | [popper.js](https://popper.js.org/docs/v2/) 参数                                                             | ^[object]refer to [popper.js](https://popper.js.org/docs/v2/) doc                                                                                                                      | {}                                             |
 | aria-label ^(a11y)              | 等价于原生 input `aria-label` 属性                                                                                | ^[string]                                                                                                                                                                              | —                                              |
-| empty-values ^(2.7.0)           | 组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)                  | ^[array]                                                                                                                                                                               | —                                              |
-| value-on-clear ^(2.7.0)         | 清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations)                  | ^[string] / ^[number] / ^[boolean] / ^[Function]                                                                                                                                       | —                                              |
+| empty-values ^(2.7.0)           | 组件的空值配置 [参考config-provider](/zh-CN/component/config-provider#empty-values-configurations)                  | ^[array]                                                                                                                                                                               | —                                              |
+| value-on-clear ^(2.7.0)         | 清空选项的值 [参考 config-provider](/zh-CN/component/config-provider#empty-values-configurations)                  | ^[string] / ^[number] / ^[boolean] / ^[Function]                                                                                                                                       | —                                              |
 
 :::warning
 

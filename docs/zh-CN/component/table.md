@@ -51,16 +51,6 @@ table/with-status
 
 :::
 
-## Table with show overflow tooltip
-
-When the content is too long, it will break into multiple lines, you can use `show-overflow-tooltip` to keep it in one line.
-
-:::demo Attribute `show-overflow-tooltip`, which accepts a `Boolean` value. 为 `true` 时多余的内容会在 hover 时以 tooltip 的形式显示出来。
-
-table/show-overflow-tooltip
-
-:::
-
 ## 固定表头
 
 纵向内容过多时，可选择固定表头。

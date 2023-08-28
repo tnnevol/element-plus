@@ -88,7 +88,7 @@ datetime-picker/default-time
 | end-placeholder         | 范围选择时结束日期的占位内容                                                                            | string                                           | —                                                            | —                   |
 | arrow-control           | 是否使用箭头进行时间选择                                                                              | boolean                                          | —                                                            | false               |
 | type                    | 显示类型                                                                                      | string                                           | year/month/date/datetime/ week/datetimerange/daterange       | date                |
-| format                  | 显示在输入框中的格式                                                                                | string                                           | 参见 [date formats](/en-US/component/date-picker#date-formats) | YYYY-MM-DD HH:mm:ss |
+| format                  | 显示在输入框中的格式                                                                                | string                                           | 参见 [date formats](/zh-CN/component/date-picker#date-formats) | YYYY-MM-DD HH:mm:ss |
 | popper-class            | DateTimePicker 下拉框的类名                                                                     | string                                           | —                                                            | —                   |
 | range-separator         | 选择范围时的分隔符                                                                                 | string                                           | —                                                            | '-'                 |
 | default-value           | 可选，选择器打开时默认显示的时间                                                                          | Date / [Date, Date]                              |                                                              | —                   |
@@ -105,8 +105,8 @@ datetime-picker/default-time
 | disabled-date           | 一个用来判断该日期是否被禁用的函数，接受一个 Date 对象作为参数。 应该返回一个 Boolean 值。                                     | function(Date)                                   | —                                                            | —                   |
 | cell-class-name         | 设置自定义类名                                                                                   | Function(Date)                                   | —                                                            | —                   |
 | teleported              | 是否将 datetime-picker 的下拉列表插入至 body 元素                                                      | boolean                                          | true / false                                                 | true                |
-| empty-values ^(2.7.0)   | 组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations) | ^[array]                                         | —                                                            |                     |
-| value-on-clear ^(2.7.0) | 清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations) | ^[string] / ^[number] / ^[boolean] / ^[Function] | —                                                            |                     |
+| empty-values ^(2.7.0)   | 组件的空值配置 [参考config-provider](/zh-CN/component/config-provider#empty-values-configurations) | ^[array]                                         | —                                                            |                     |
+| value-on-clear ^(2.7.0) | 清空选项的值 [参考 config-provider](/zh-CN/component/config-provider#empty-values-configurations) | ^[string] / ^[number] / ^[boolean] / ^[Function] | —                                                            |                     |
 
 ## 事件
 

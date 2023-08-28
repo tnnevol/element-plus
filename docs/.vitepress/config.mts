@@ -42,7 +42,7 @@ languages.forEach((lang) => {
 })
 
 export const config: UserConfig = {
-  title: 'Element Plus',
+  title: 'ZA GOV Element Plus',
   description: 'A Vue 3 based component library for designers and developers',
   lastUpdated: true,
   head,

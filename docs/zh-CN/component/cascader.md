@@ -160,8 +160,8 @@ cascader/panel
 | tag-type                            | 标签类型                                                                                       | ^[enum]`'success' \| 'info' \| 'warning' \| 'danger'`         | info  |
 | validate-event                      | 输入时是否触发表单的校验                                                                               | ^[boolean]                                                       | true  |
 | max-collapse-tags ^(2.3.10)         | 需要显示的 Tag 的最大数量 只有当 `collapse-tags` 设置为 true 时才会生效。                                        | ^[number]                                                        | 1     |
-| empty-values ^(2.7.0)               | 组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations)  | ^[array]                                                         | —     |
-| value-on-clear ^(2.7.0)             | 清空选项的值  [参考 config-provider](/en-US/component/config-provider#empty-values-configurations) | ^[string] / ^[number] / ^[boolean] / ^[Function]                 | —     |
+| empty-values ^(2.7.0)               | 组件的空值配置 [参考config-provider](/zh-CN/component/config-provider#empty-values-configurations)  | ^[array]                                                         | —     |
+| value-on-clear ^(2.7.0)             | 清空选项的值  [参考 config-provider](/zh-CN/component/config-provider#empty-values-configurations) | ^[string] / ^[number] / ^[boolean] / ^[Function]                 | —     |
 
 ### Cascader Events
 

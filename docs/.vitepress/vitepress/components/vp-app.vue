@@ -129,9 +129,6 @@ onMounted(async () => {
       @open-menu="toggleSidebar(true)"
     />
     <VPSidebar :open="isSidebarOpen" @close="toggleSidebar(false)">
-      <template #top>
-        <VPSponsors />
-      </template>
       <template #bottom>
         <slot name="sidebar-bottom" />
       </template>

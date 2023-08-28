@@ -62,9 +62,9 @@ time-picker/range
 | arrow-control               | 是否使用箭头进行时间选择                                                                              | ^[boolean]                                                                                         | false       |
 | popper-class                | TimePicker 下拉框的类名                                                                         | ^[string]                                                                                          | ''          |
 | range-separator             | 选择范围时的分隔符                                                                                 | ^[string]                                                                                          | '-'         |
-| format                      | 显示在输入框中的格式                                                                                | ^[string] see [date formats](/en-US/component/date-picker#date-formats)                            | —           |
+| format                      | 显示在输入框中的格式                                                                                | ^[string] see [date formats](/zh-CN/component/date-picker#date-formats)                            | —           |
 | default-value               | 可选，选择器打开时默认显示的时间                                                                          | ^[Date] / ^[object]`[Date, Date]`                                                                  | —           |
-| value-format                | 可选，绑定值的格式。 不指定则绑定值为 Date 对象                                                               | ^[string] 参考 [日期格式](/en-US/component/date-picker#date-formats)                                     | —           |
+| value-format                | 可选，绑定值的格式。 不指定则绑定值为 Date 对象                                                               | ^[string] 参考 [日期格式](/zh-CN/component/date-picker#date-formats)                                     | —           |
 | id                          | 等价于原生 input `id` 属性                                                                       | ^[string] / ^[object]`[string, string]`                                                            | —           |
 | name                        | 等价于原生 input `name` 属性                                                                     | ^[string]                                                                                          | ''          |
 | label ^(a11y) ^(deprecated) | 等价于原生 input `aria-label` 属性                                                               | ^[string]                                                                                          | —           |
@@ -76,8 +76,8 @@ time-picker/range
 | disabled-seconds            | 禁止选择部分秒选项                                                                                 | ^[Function]`(hour: number, minute: number, role: string, comparingDate?: Dayjs) => number[]`    | —           |
 | teleported                  | 是否将 popover 的下拉列表镜像至 body 元素                                                              | ^[boolean]                                                                                         | true        |
 | tabindex                    | 输入框的 tabindex                                                                             | ^[string] / ^[number]                                                                              | 0           |
-| empty-values ^(2.7.0)       | 组件的空值配置 [参考config-provider](/en-US/component/config-provider#empty-values-configurations) | ^[array]                                                                                           | —           |
-| value-on-clear ^(2.7.0)     | 清空选项的值 [参考 config-provider](/en-US/component/config-provider#empty-values-configurations) | ^[string] / ^[number] / ^[boolean] / ^[Function]                                                   | —           |
+| empty-values ^(2.7.0)       | 组件的空值配置 [参考config-provider](/zh-CN/component/config-provider#empty-values-configurations) | ^[array]                                                                                           | —           |
+| value-on-clear ^(2.7.0)     | 清空选项的值 [参考 config-provider](/zh-CN/component/config-provider#empty-values-configurations) | ^[string] / ^[number] / ^[boolean] / ^[Function]                                                   | —           |
 
 ### 事件
 

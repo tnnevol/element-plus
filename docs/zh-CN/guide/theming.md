@@ -196,7 +196,7 @@ export default defineConfig({
 
 CSS 变量是一个非常有用的功能，几乎所有浏览器都支持。 （IE：啊这？)
 
-> 从 [使用CSS自定义属性(变量) | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) 了解更多信息
+> 从 [使用CSS自定义属性(变量) | MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties) 了解更多信息
 
 我们用 css 变量来重构了几乎所有组件的样式系统。
 

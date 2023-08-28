@@ -3,9 +3,9 @@ import { computed, reactive, ref } from 'vue'
 import { useEventListener, useParallax, useThrottleFn } from '@vueuse/core'
 import { useLang } from '../../composables/lang'
 import homeLocale from '../../../i18n/pages/home.json'
-import HomeSponsors from '../home/home-sponsors.vue'
+// import HomeSponsors from '../home/home-sponsors.vue'
 import HomeCards from '../home/home-cards.vue'
-import HomeFooter from './vp-footer.vue'
+// import HomeFooter from './vp-footer.vue'
 import type { CSSProperties } from 'vue'
 const target = ref<HTMLElement | null>(null)
 const parallax = reactive(useParallax(target))
@@ -115,9 +115,10 @@ useEventListener(window, 'scroll', handleScroll)
 <template>
   <div ref="target" class="home-page">
     <div class="banner" text="center">
-      <div class="banner-desc">
+      <div class="banner-desc" m="t-4">
+        <img src="/images/zuoan-logo.jpg" alt="ZuoAn logo" m="b-4" />
         <h1>{{ homeLang['title'] }}</h1>
-        <p>{{ homeLang['title_sub'] }}</p>
+        <p m="t-2">{{ homeLang['title_sub'] }}</p>
       </div>
     </div>
     <div ref="jumbotronRef" class="jumbotron">
@@ -141,10 +142,10 @@ useEventListener(window, 'scroll', handleScroll)
       alt="banner"
       class="mobile-banner"
     />
-    <HomeSponsors />
-    <HomeCards />
+    <!--    <HomeSponsors />-->
+    <!--    <HomeCards />-->
   </div>
-  <HomeFooter :is-home="true" />
+  <!--  <HomeFooter :is-home="true" />-->
 </template>
 
 <style lang="scss">

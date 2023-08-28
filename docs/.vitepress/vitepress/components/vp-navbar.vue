@@ -34,6 +34,9 @@ const currentLink = computed(() => {
     <div class="header-container">
       <div class="logo-container">
         <a :href="currentLink">
+          <img class="logo" src="/images/zuoan-logo.jpg" alt="Zuo An Logo" />
+        </a>
+        <a :href="currentLink">
           <img
             class="logo"
             src="/images/element-plus-logo.svg"
@@ -44,8 +47,8 @@ const currentLink = computed(() => {
       <div class="content">
         <VPNavbarSearch class="search" :options="theme.agolia" multilang />
         <VPNavbarMenu class="menu" />
-        <VPNavbarThemeToggler class="theme-toggler" />
-        <VPNavbarTranslation class="translation" />
+        <!--        <VPNavbarThemeToggler class="theme-toggler" />-->
+        <!--        <VPNavbarTranslation class="translation" />-->
         <VPNavbarSocialLinks class="social-links" />
         <VPNavbarHamburger
           :active="fullScreen"

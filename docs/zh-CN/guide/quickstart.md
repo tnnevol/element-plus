@@ -223,4 +223,4 @@ export default defineComponent({
 
 ## 开始使用
 
-现在你可以启动项目了。 对于每个组件的用法，请查阅 [对应的独立文档](https://element-plus.org/en-US/component/button.html)。
+现在你可以启动项目了。 对于每个组件的用法，请查阅 [对应的独立文档](https://element-plus.org/zh-CN/component/button.html)。
