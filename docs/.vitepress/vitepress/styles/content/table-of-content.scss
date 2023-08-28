@@ -55,7 +55,7 @@
           color: var(--text-color-lighter);
           transition: color var(--el-transition-duration);
           &.active {
-            color: var(--brand-color);
+            color: var(--text-color-light);
           }
         }
 

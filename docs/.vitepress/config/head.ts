@@ -60,13 +60,13 @@ export const head: HeadConfig[] = [
   ],
 
   ['script', {}, fs.readFileSync(path.resolve(vpRoot, 'lang.js'), 'utf-8')],
-  [
+  /*  [
     'script',
     {
       async: 'true',
       src: 'https://www.googletagmanager.com/gtag/js?id=UA-175337989-1',
     },
-  ],
+  ],*/
   [
     'script',
     {},
@@ -81,7 +81,7 @@ export const head: HeadConfig[] = [
         });
     }`,
   ],
-  [
+  /*  [
     'script',
     {
       async: 'true',
@@ -90,8 +90,8 @@ export const head: HeadConfig[] = [
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'UA-175337989-1');`,
-  ],
-  [
+  ],*/
+  /*  [
     'script',
     {
       async: 'true',
@@ -108,7 +108,7 @@ gtag('config', 'UA-175337989-1');`,
 
       gtag('config', 'G-M74ZHEQ1M1');
     `,
-  ],
+  ],*/
   [
     'script',
     {},
@@ -136,9 +136,9 @@ gtag('config', 'UA-175337989-1');`,
     `,
   ],
 ]
-
-head.push([
-  'script',
-  {},
-  fs.readFileSync(path.resolve(vpRoot, 'dark-mode.js'), 'utf-8'),
-])
+//
+// head.push([
+//   'script',
+//   {},
+//   fs.readFileSync(path.resolve(vpRoot, 'dark-mode.js'), 'utf-8'),
+// ])

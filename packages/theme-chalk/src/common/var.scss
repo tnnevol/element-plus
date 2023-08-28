@@ -18,7 +18,7 @@ $colors: map.deep-merge(
     'white': #ffffff,
     'black': #000000,
     'primary': (
-      'base': #064661,
+      'base': #00f6ff,
     ),
     'success': (
       'base': #39d186,
@@ -84,7 +84,7 @@ $color-info: map.get($colors, 'info', 'base') !default;
 // 90% ecf5ff
 @each $type in $types {
   @for $i from 1 through 9 {
-    @include set-color-mix-level($type, $i, 'light', $color-white);
+    @include set-color-mix-level($type, $i, 'light', $color-black);
   }
 }
 
@@ -96,9 +96,10 @@ $color-info: map.get($colors, 'info', 'base') !default;
 $text-color: () !default;
 $text-color: map.merge(
   (
+    '': #8c97a3,
     'primary': #00f6ff,
-    'regular': #6dc1cb,
-    'secondary': #9baec1,
+    'regular': #24969a,
+    'secondary': #3b5358,
     'placeholder': #00808f,
     'disabled': #c0c4cc,
   ),
@@ -108,8 +109,8 @@ $text-color: map.merge(
 $border-color: () !default;
 $border-color: map.merge(
   (
-    '': #dcdfe6,
-    'light': #016770,
+    '': #00808f,
+    'light': #00f6ff,
     'lighter': #ebeef5,
     'extra-light': #f2f6fc,
     'dark': #d4d7de,
@@ -121,13 +122,13 @@ $border-color: map.merge(
 $fill-color: () !default;
 $fill-color: map.merge(
   (
-    '': #f0f2f5,
-    'light': #f5f7fa,
-    'lighter': #fafafa,
-    'extra-light': #fafcff,
-    'dark': #ebedf0,
+    '': #041322,
+    'light': #00838f,
+    'lighter': #00838f,
+    'extra-light': #00f6ff,
+    'dark': #03182b,
     'darker': #e6e8eb,
-    'blank': #ffffff,
+    'blank': #000a1a,
   ),
   $fill-color
 );
@@ -136,8 +137,8 @@ $fill-color: map.merge(
 $bg-color: () !default;
 $bg-color: map.merge(
   (
-    '': #ffffff,
-    'page': #f2f3f5,
+    '': #000a1a,
+    'page': #031d2a,
     'overlay': #ffffff,
   ),
   $bg-color
@@ -196,11 +197,11 @@ $font-family: map.merge(
 $font-size: () !default;
 $font-size: map.merge(
   (
-    'extra-large': 20px,
-    'large': 18px,
-    'medium': 16px,
-    'base': 14px,
-    'small': 13px,
+    'extra-large': 24px,
+    'large': 22px,
+    'medium': 18px,
+    'base': 16px,
+    'small': 14px,
     'extra-small': 12px,
   ),
   $font-size
@@ -253,7 +254,7 @@ $overlay-color: map.merge(
 $mask-color: () !default;
 $mask-color: map.merge(
   (
-    '': rgba(255, 255, 255, 0.9),
+    '': rgba(0, 0, 0, 0.5),
     'extra-light': rgba(255, 255, 255, 0.3),
   ),
   $mask-color
@@ -644,7 +645,7 @@ $button: map.merge(
   (
     'font-weight': getCssVar('font-weight-primary'),
     'border-color': getCssVar('border-color'),
-    'bg-color': getCssVar('fill-color', 'blank'),
+    'bg-color': getCssVar('fill-color'),
     'text-color': getCssVar('text-color', 'regular'),
     'disabled-text-color': getCssVar('disabled-text-color'),
     'disabled-bg-color': getCssVar('fill-color', 'blank'),
@@ -763,16 +764,16 @@ $dialog: map.merge(
 $table: () !default;
 $table: map.merge(
   (
-    'border-color': getCssVar('border-color-lighter'),
-    'border': 1px solid getCssVar('table-border-color'),
-    'text-color': getCssVar('text-color-regular'),
-    'header-text-color': getCssVar('text-color-secondary'),
-    'row-hover-bg-color': getCssVar('fill-color', 'light'),
+    'border-color': getCssVar('border-color', 'light'),
+    'border': 0 solid getCssVar('table-border-color'),
+    'text-color': getCssVar('text-color'),
+    'header-text-color': getCssVar('text-color-regular'),
+    'row-hover-bg-color': getCssVar('fill-color', 'blank'),
     'current-row-bg-color': getCssVar('color-primary-light-9'),
-    'header-bg-color': getCssVar('bg-color'),
+    'header-bg-color': getCssVar('fill-color', 'dark'),
     'fixed-box-shadow': getCssVar('box-shadow', 'light'),
-    'bg-color': getCssVar('fill-color', 'blank'),
-    'tr-bg-color': getCssVar('fill-color', 'blank'),
+    'bg-color': 'transparent',
+    'tr-bg-color': 'transparent',
     'expanded-cell-bg-color': getCssVar('fill-color', 'blank'),
     'fixed-left-column': inset 10px 0 10px -10px rgb(0 0 0 / 15%),
     'fixed-right-column': inset -10px 0 10px -10px rgb(0 0 0 / 15%),

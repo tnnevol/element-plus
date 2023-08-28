@@ -106,5 +106,8 @@ export default defineConfig(async ({ mode }) => {
     optimizeDeps: {
       include: optimizeDeps,
     },
+    css: {
+      devSourcemap: mode === 'development',
+    },
   }
 })

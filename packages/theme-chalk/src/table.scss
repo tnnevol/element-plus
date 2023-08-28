@@ -24,14 +24,6 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    // 表格底部伪 border，总是有的
-    &::before {
-      @include extend-rule(border-pseudo);
-      left: 0;
-      bottom: 0px;
-      width: 100%;
-      height: 1px;
-    }
   }
 
   &.has-footer {
@@ -257,6 +249,14 @@
   // table--border
   @include m(border) {
     @include e(inner-wrapper) {
+      // 表格底部伪 border，总是有的
+      &::before {
+        @include extend-rule(border-pseudo);
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+      }
       &::after {
         @include extend-rule(border-pseudo);
         left: 0;
@@ -520,7 +520,7 @@
     & .#{$namespace}-table__body {
       & tr.#{$namespace}-table__row--striped {
         td.#{$namespace}-table__cell {
-          background: getCssVar('fill-color', 'lighter');
+          background: getCssVar('fill-color', 'dark');
         }
 
         &.current-row td.#{$namespace}-table__cell {

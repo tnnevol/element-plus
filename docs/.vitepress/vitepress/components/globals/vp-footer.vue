@@ -84,7 +84,7 @@ const homeLang = computed(() => homeLocale[lang.value])
   background-color: var(--el-fill-color-lighter);
 }
 .footer {
-  background-color: #f5f7fa;
+  background-color: var(--bg-color);
   box-sizing: border-box;
   padding: 42px 64px 64px;
   // height: 340px;
