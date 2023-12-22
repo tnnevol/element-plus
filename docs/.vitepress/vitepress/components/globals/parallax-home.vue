@@ -116,6 +116,7 @@ useEventListener(window, 'scroll', handleScroll)
   <div ref="target" class="home-page">
     <div class="banner" text="center">
       <div class="banner-desc" m="t-4">
+        <img src="/images/zuoan-logo.jpg" alt="ZuoAn logo" m="b-4" />
         <h1>{{ homeLang['title'] }}</h1>
         <p m="t-2">{{ homeLang['title_sub'] }}</p>
       </div>
@@ -142,7 +143,7 @@ useEventListener(window, 'scroll', handleScroll)
       class="mobile-banner"
     />
     <!--    <HomeSponsors />-->
-    <HomeCards />
+    <!--    <HomeCards />-->
   </div>
   <!--  <HomeFooter :is-home="true" />-->
 </template>
